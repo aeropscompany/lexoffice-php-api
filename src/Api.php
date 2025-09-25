@@ -72,7 +72,7 @@ class Api
      * @param string $apiKey
      * @param Client|null $client
      */
-    public function __construct(string $apiKey, Client $client = null)
+    public function __construct(string $apiKey, ?Client $client = null)
     {
         if (is_null($client)) {
             $client = new Client();
