@@ -85,7 +85,7 @@ abstract class BaseClient implements ClientInterface
      * @param string|null $boundary
      * @return MultipartStream
      */
-    protected function createMultipartStream(array $content, string $boundary = null): MultipartStream
+    protected function createMultipartStream(array $content, ?string $boundary = null): MultipartStream
     {
         $stream = [];
         $boundary = $boundary ?: '--lexoffice';
